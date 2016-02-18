@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="801" y="428"/>
         </scene>
-        <!--View Controller-->
+        <!--Search View Controller-->
         <scene sceneID="zcK-AT-RZl">
             <objects>
-                <viewController id="WEB-3T-Vue" sceneMemberID="viewController">
+                <viewController id="WEB-3T-Vue" customClass="RGTSearchViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="R0d-S6-LJX"/>
                         <viewControllerLayoutGuide type="bottom" id="fpt-0P-lgu"/>
@@ -57,6 +57,9 @@
                                 <rect key="frame" x="20" y="72" width="496" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="WEB-3T-Vue" id="FkA-zR-UFw"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDY-FV-s73">
                                 <rect key="frame" x="524" y="72" width="56" height="30"/>
@@ -65,12 +68,19 @@
                                     <constraint firstAttribute="width" constant="56" id="kjh-O5-gEK"/>
                                 </constraints>
                                 <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="searchButtonTouchUp:" destination="WEB-3T-Vue" eventType="touchUpInside" id="ASQ-3K-i2A"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXH-Yu-hlH">
                                 <rect key="frame" x="20" y="110" width="560" height="159"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="159" id="2Ac-5n-yzk"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="WEB-3T-Vue" id="a2j-12-9sX"/>
+                                    <outlet property="delegate" destination="WEB-3T-Vue" id="Cpp-UP-gV1"/>
+                                </connections>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -86,6 +96,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="1Q0-Mw-wfJ"/>
+                    <connections>
+                        <outlet property="categoryPicker" destination="oXH-Yu-hlH" id="CPL-Pj-MHE"/>
+                        <outlet property="searchTextField" destination="0xt-p7-dwS" id="dP3-s1-2CY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zLA-9e-fwk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

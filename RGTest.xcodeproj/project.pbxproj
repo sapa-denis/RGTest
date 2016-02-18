@@ -14,7 +14,15 @@
 		EA5FCF731C7262FF00743987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5FCF711C7262FF00743987 /* LaunchScreen.storyboard */; };
 		EA5FCF7E1C7262FF00743987 /* RGTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCF7D1C7262FF00743987 /* RGTestTests.m */; };
 		EA5FCF931C72636600743987 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCF8F1C72636600743987 /* AppDelegate.m */; };
-		EA5FCF941C72636600743987 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCF921C72636600743987 /* ViewController.m */; };
+		EA5FCF991C74A1B200743987 /* RGTSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCF981C74A1B200743987 /* RGTSearchViewController.m */; };
+		EA5FCF9C1C74F2F200743987 /* RGTAPIController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCF9B1C74F2F200743987 /* RGTAPIController.m */; };
+		EA5FCF9F1C74F51B00743987 /* RGTAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCF9E1C74F51B00743987 /* RGTAPIManager.m */; };
+		EA5FCFA31C74FD3500743987 /* RGTBaseHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFA21C74FD3500743987 /* RGTBaseHTTPRequest.m */; };
+		EA5FCFA61C75002700743987 /* RGTGetCategoriesHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFA51C75002700743987 /* RGTGetCategoriesHTTPRequest.m */; };
+		EA5FCFAA1C75FA4200743987 /* RGTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFA81C75FA4200743987 /* RGTest.xcdatamodeld */; };
+		EA5FCFB21C75FB8A00743987 /* RGTCategory+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFAF1C75FB8A00743987 /* RGTCategory+CoreDataProperties.m */; };
+		EA5FCFB31C75FB8A00743987 /* RGTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFB11C75FB8A00743987 /* RGTCategory.m */; };
+		EA5FCFB61C75FBA700743987 /* RGTMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFB51C75FBA700743987 /* RGTMapping.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +50,24 @@
 		EA5FCF7F1C7262FF00743987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA5FCF8E1C72636600743987 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EA5FCF8F1C72636600743987 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EA5FCF911C72636600743987 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EA5FCF921C72636600743987 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EA5FCF971C74A1B200743987 /* RGTSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTSearchViewController.h; sourceTree = "<group>"; };
+		EA5FCF981C74A1B200743987 /* RGTSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTSearchViewController.m; sourceTree = "<group>"; };
+		EA5FCF9A1C74F2F200743987 /* RGTAPIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTAPIController.h; sourceTree = "<group>"; };
+		EA5FCF9B1C74F2F200743987 /* RGTAPIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTAPIController.m; sourceTree = "<group>"; };
+		EA5FCF9D1C74F51B00743987 /* RGTAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTAPIManager.h; sourceTree = "<group>"; };
+		EA5FCF9E1C74F51B00743987 /* RGTAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTAPIManager.m; sourceTree = "<group>"; };
+		EA5FCFA11C74FD3500743987 /* RGTBaseHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTBaseHTTPRequest.h; sourceTree = "<group>"; };
+		EA5FCFA21C74FD3500743987 /* RGTBaseHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTBaseHTTPRequest.m; sourceTree = "<group>"; };
+		EA5FCFA41C75002700743987 /* RGTGetCategoriesHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTGetCategoriesHTTPRequest.h; sourceTree = "<group>"; };
+		EA5FCFA51C75002700743987 /* RGTGetCategoriesHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTGetCategoriesHTTPRequest.m; sourceTree = "<group>"; };
+		EA5FCFA71C75F95F00743987 /* RGTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RGTest-Prefix.pch"; sourceTree = "<group>"; };
+		EA5FCFA91C75FA4200743987 /* RGTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RGTest.xcdatamodel; sourceTree = "<group>"; };
+		EA5FCFAE1C75FB8A00743987 /* RGTCategory+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RGTCategory+CoreDataProperties.h"; sourceTree = "<group>"; };
+		EA5FCFAF1C75FB8A00743987 /* RGTCategory+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RGTCategory+CoreDataProperties.m"; sourceTree = "<group>"; };
+		EA5FCFB01C75FB8A00743987 /* RGTCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTCategory.h; sourceTree = "<group>"; };
+		EA5FCFB11C75FB8A00743987 /* RGTCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTCategory.m; sourceTree = "<group>"; };
+		EA5FCFB41C75FBA700743987 /* RGTMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTMapping.h; sourceTree = "<group>"; };
+		EA5FCFB51C75FBA700743987 /* RGTMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTMapping.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				EA5FCF8D1C72636600743987 /* Classes */,
-				EA5FCF6C1C7262FF00743987 /* Main.storyboard */,
-				EA5FCF6F1C7262FF00743987 /* Assets.xcassets */,
-				EA5FCF711C7262FF00743987 /* LaunchScreen.storyboard */,
-				EA5FCF741C7262FF00743987 /* Info.plist */,
+				EA5FCF961C74A11900743987 /* Resources */,
 				EA5FCF631C7262FF00743987 /* Supporting Files */,
 			);
 			path = RGTest;
@@ -118,6 +139,8 @@
 		EA5FCF631C7262FF00743987 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EA5FCF741C7262FF00743987 /* Info.plist */,
+				EA5FCFA71C75F95F00743987 /* RGTest-Prefix.pch */,
 				EA5FCF641C7262FF00743987 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -135,6 +158,8 @@
 		EA5FCF8D1C72636600743987 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EA5FCF951C73A21600743987 /* API */,
+				EA5FCFAB1C75FAD900743987 /* Models */,
 				EA5FCF901C72636600743987 /* View Controllers */,
 				EA5FCF8E1C72636600743987 /* AppDelegate.h */,
 				EA5FCF8F1C72636600743987 /* AppDelegate.m */,
@@ -145,10 +170,73 @@
 		EA5FCF901C72636600743987 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EA5FCF911C72636600743987 /* ViewController.h */,
-				EA5FCF921C72636600743987 /* ViewController.m */,
+				EA5FCF971C74A1B200743987 /* RGTSearchViewController.h */,
+				EA5FCF981C74A1B200743987 /* RGTSearchViewController.m */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EA5FCF951C73A21600743987 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EA5FCFA01C74FCA200743987 /* Requests */,
+				EA5FCF9A1C74F2F200743987 /* RGTAPIController.h */,
+				EA5FCF9B1C74F2F200743987 /* RGTAPIController.m */,
+				EA5FCF9D1C74F51B00743987 /* RGTAPIManager.h */,
+				EA5FCF9E1C74F51B00743987 /* RGTAPIManager.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		EA5FCF961C74A11900743987 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA5FCF6C1C7262FF00743987 /* Main.storyboard */,
+				EA5FCF6F1C7262FF00743987 /* Assets.xcassets */,
+				EA5FCF711C7262FF00743987 /* LaunchScreen.storyboard */,
+				EA5FCFA81C75FA4200743987 /* RGTest.xcdatamodeld */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EA5FCFA01C74FCA200743987 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				EA5FCFA11C74FD3500743987 /* RGTBaseHTTPRequest.h */,
+				EA5FCFA21C74FD3500743987 /* RGTBaseHTTPRequest.m */,
+				EA5FCFA41C75002700743987 /* RGTGetCategoriesHTTPRequest.h */,
+				EA5FCFA51C75002700743987 /* RGTGetCategoriesHTTPRequest.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		EA5FCFAB1C75FAD900743987 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA5FCFAC1C75FAD900743987 /* Entities */,
+				EA5FCFAD1C75FAD900743987 /* Mapping */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA5FCFAC1C75FAD900743987 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				EA5FCFAE1C75FB8A00743987 /* RGTCategory+CoreDataProperties.h */,
+				EA5FCFAF1C75FB8A00743987 /* RGTCategory+CoreDataProperties.m */,
+				EA5FCFB01C75FB8A00743987 /* RGTCategory.h */,
+				EA5FCFB11C75FB8A00743987 /* RGTCategory.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		EA5FCFAD1C75FAD900743987 /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				EA5FCFB41C75FBA700743987 /* RGTMapping.h */,
+				EA5FCFB51C75FBA700743987 /* RGTMapping.m */,
+			);
+			path = Mapping;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,9 +390,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA5FCF941C72636600743987 /* ViewController.m in Sources */,
+				EA5FCFA31C74FD3500743987 /* RGTBaseHTTPRequest.m in Sources */,
+				EA5FCFB61C75FBA700743987 /* RGTMapping.m in Sources */,
+				EA5FCF9C1C74F2F200743987 /* RGTAPIController.m in Sources */,
 				EA5FCF931C72636600743987 /* AppDelegate.m in Sources */,
+				EA5FCFB31C75FB8A00743987 /* RGTCategory.m in Sources */,
+				EA5FCF991C74A1B200743987 /* RGTSearchViewController.m in Sources */,
+				EA5FCFB21C75FB8A00743987 /* RGTCategory+CoreDataProperties.m in Sources */,
+				EA5FCFAA1C75FA4200743987 /* RGTest.xcdatamodeld in Sources */,
+				EA5FCF9F1C74F51B00743987 /* RGTAPIManager.m in Sources */,
 				EA5FCF651C7262FF00743987 /* main.m in Sources */,
+				EA5FCFA61C75002700743987 /* RGTGetCategoriesHTTPRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +527,9 @@
 			baseConfigurationReference = 5918CFAB53D0C7AB5425F1F8 /* Pods-RGTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/RGTest/RGTest-Prefix.pch";
 				INFOPLIST_FILE = RGTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -444,6 +543,9 @@
 			baseConfigurationReference = A72401F9563EB2292FD5A95F /* Pods-RGTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/RGTest/RGTest-Prefix.pch";
 				INFOPLIST_FILE = RGTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -507,6 +609,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EA5FCFA81C75FA4200743987 /* RGTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA5FCFA91C75FA4200743987 /* RGTest.xcdatamodel */,
+			);
+			currentVersion = EA5FCFA91C75FA4200743987 /* RGTest.xcdatamodel */;
+			path = RGTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EA5FCF581C7262FF00743987 /* Project object */;
 }
