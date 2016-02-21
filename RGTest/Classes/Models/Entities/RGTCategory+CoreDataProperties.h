@@ -16,7 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RGTCategory (CoreDataProperties)
 
 @property (nullable, nonatomic, retain) NSNumber *categoryID;
-@property (nullable, nonatomic, retain) NSString *name;
+@property (nullable, nonatomic, retain) NSString *categoryName;
+@property (nullable, nonatomic, retain) NSString *fullName;
 
 @end
 

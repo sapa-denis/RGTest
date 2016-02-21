@@ -8,6 +8,8 @@
 
 #import "RGTSearchViewController.h"
 
+#import "RGTSearchResultCollectionViewController.h"
+
 #import "RGTAPIController.h"
 
 #import "RGTCategory.h"
@@ -30,7 +32,7 @@
 	__weak __block typeof(self) weakSelf = self;
 	[[RGTAPIController sharedController] getCategoriesWithSuccess:^(NSArray * categories) {
 		
-		weakSelf.categories = [RGTCategory MR_findAllSortedBy:@"name" ascending:YES];
+		weakSelf.categories = [RGTCategory MR_findAllSortedBy:@"fullName" ascending:YES];
 //		weakSelf.categories = categories;
 		[weakSelf.categoryPicker reloadAllComponents];
 	} failure:^(NSError *error) {
@@ -67,7 +69,7 @@
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
 	RGTCategory *category = [self.categories objectAtIndex:row];
-	return category.name;
+	return category.fullName;
 }
 
 #pragma mark - UITextFieldDelegate
@@ -78,16 +80,20 @@
 	return YES;
 }
 
-
-
-/*
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+	if ([segue.identifier isEqualToString:@"RGTOpenSearchResultSegue"]) {
+		RGTSearchResultCollectionViewController *destinationViewController = (RGTSearchResultCollectionViewController *)segue.destinationViewController;
+		
+		NSInteger selectedIndex = [self.categoryPicker selectedRowInComponent:0];
+		
+		destinationViewController.category = [self.categories objectAtIndex:selectedIndex];
+		destinationViewController.seatchRequest = self.searchTextField.text;
+	}
+
 }
-*/
+
 
 @end

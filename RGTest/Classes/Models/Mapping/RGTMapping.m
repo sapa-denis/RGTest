@@ -14,7 +14,8 @@
 {
 	FEMMapping *mapping = [[FEMMapping alloc] initWithEntityName:@"RGTCategory"];
 	[mapping addAttributesFromDictionary:@{ @"categoryID" : @"category_id",
-											@"name" : @"long_name"
+											@"fullName" : @"long_name",
+											@"categoryName" : @"category_name"
 											}];
 	
 	mapping.primaryKey = @"categoryID";

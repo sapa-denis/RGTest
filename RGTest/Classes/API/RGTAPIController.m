@@ -11,6 +11,7 @@
 #import "RGTMapping.h"
 
 #import "RGTGetCategoriesHTTPRequest.h"
+#import "RGTGetSearchResultHTTPRequest.h"
 
 static NSString *const kRGTAPIBaseURL	= @"https://openapi.etsy.com/v2/";
 static NSString *const kRGTAPIToken		= @"l6pdqjuf7hdf97h1yvzadfce";
@@ -40,7 +41,7 @@ static NSString *const kRGTAPIToken		= @"l6pdqjuf7hdf97h1yvzadfce";
 {
 	RGTGetCategoriesHTTPRequest *getCategories = [[RGTGetCategoriesHTTPRequest alloc] init];
 	[self.apiManager makeGETRequest:getCategories
-							success:^(id responseObject){
+							success:^(id responseObject) {
 								[MagicalRecord saveWithBlock:^(NSManagedObjectContext * _Nonnull localContext) {
 									NSArray *categories = [FEMDeserializer collectionFromRepresentation:responseObject[@"results"] mapping:[RGTCategory defaultMapping] context:localContext];
 									
@@ -50,6 +51,21 @@ static NSString *const kRGTAPIToken		= @"l6pdqjuf7hdf97h1yvzadfce";
 										});
 									}
 								}];
+							}
+							failure:failure];
+}
+
+- (void)getSearchResultWithRequest:(NSString *)searchRequest
+					   andCategory:(NSString *)category
+						   success:(void (^)(id responseObject))success
+						   failure:(void (^)(NSError *error))failure
+{
+	RGTGetSearchResultHTTPRequest *getSearchResult = [[RGTGetSearchResultHTTPRequest alloc] initWithCategory:category
+																							andSearchRequest:searchRequest];
+	
+	[self.apiManager makeGETRequest:getSearchResult
+							success:^(id responseObject) {
+								
 							}
 							failure:failure];
 }

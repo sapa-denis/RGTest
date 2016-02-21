@@ -15,4 +15,9 @@
 - (void)getCategoriesWithSuccess:(void (^)(id responseObject))success
 						 failure:(void (^)(NSError *error))failure;
 
+- (void)getSearchResultWithRequest:(NSString *)searchRequest
+					   andCategory:(NSString *)category
+						   success:(void (^)(id responseObject))success
+						   failure:(void (^)(NSError *error))failure;
+
 @end

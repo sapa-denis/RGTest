@@ -23,6 +23,10 @@
 		EA5FCFB21C75FB8A00743987 /* RGTCategory+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFAF1C75FB8A00743987 /* RGTCategory+CoreDataProperties.m */; };
 		EA5FCFB31C75FB8A00743987 /* RGTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFB11C75FB8A00743987 /* RGTCategory.m */; };
 		EA5FCFB61C75FBA700743987 /* RGTMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFB51C75FBA700743987 /* RGTMapping.m */; };
+		EA5FCFB91C76342F00743987 /* RGTSearchResultCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFB81C76342F00743987 /* RGTSearchResultCollectionViewController.m */; };
+		EA5FCFBD1C7635E100743987 /* RGTProductCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFBC1C7635E100743987 /* RGTProductCollectionViewCell.m */; };
+		EA5FCFC01C76363900743987 /* RGTProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA5FCFBF1C76363900743987 /* RGTProductCollectionViewCell.xib */; };
+		EA5FCFC81C773F6E00743987 /* RGTGetSearchResultHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFC71C773F6E00743987 /* RGTGetSearchResultHTTPRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,13 @@
 		EA5FCFB11C75FB8A00743987 /* RGTCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTCategory.m; sourceTree = "<group>"; };
 		EA5FCFB41C75FBA700743987 /* RGTMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTMapping.h; sourceTree = "<group>"; };
 		EA5FCFB51C75FBA700743987 /* RGTMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTMapping.m; sourceTree = "<group>"; };
+		EA5FCFB71C76342F00743987 /* RGTSearchResultCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTSearchResultCollectionViewController.h; sourceTree = "<group>"; };
+		EA5FCFB81C76342F00743987 /* RGTSearchResultCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTSearchResultCollectionViewController.m; sourceTree = "<group>"; };
+		EA5FCFBB1C7635E100743987 /* RGTProductCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTProductCollectionViewCell.h; sourceTree = "<group>"; };
+		EA5FCFBC1C7635E100743987 /* RGTProductCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTProductCollectionViewCell.m; sourceTree = "<group>"; };
+		EA5FCFBF1C76363900743987 /* RGTProductCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RGTProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		EA5FCFC61C773F6E00743987 /* RGTGetSearchResultHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTGetSearchResultHTTPRequest.h; sourceTree = "<group>"; };
+		EA5FCFC71C773F6E00743987 /* RGTGetSearchResultHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTGetSearchResultHTTPRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +172,7 @@
 				EA5FCF951C73A21600743987 /* API */,
 				EA5FCFAB1C75FAD900743987 /* Models */,
 				EA5FCF901C72636600743987 /* View Controllers */,
+				EA5FCFBA1C7634C200743987 /* Views */,
 				EA5FCF8E1C72636600743987 /* AppDelegate.h */,
 				EA5FCF8F1C72636600743987 /* AppDelegate.m */,
 			);
@@ -172,6 +184,8 @@
 			children = (
 				EA5FCF971C74A1B200743987 /* RGTSearchViewController.h */,
 				EA5FCF981C74A1B200743987 /* RGTSearchViewController.m */,
+				EA5FCFB71C76342F00743987 /* RGTSearchResultCollectionViewController.h */,
+				EA5FCFB81C76342F00743987 /* RGTSearchResultCollectionViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -191,6 +205,7 @@
 		EA5FCF961C74A11900743987 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EA5FCFBE1C76361A00743987 /* XIB */,
 				EA5FCF6C1C7262FF00743987 /* Main.storyboard */,
 				EA5FCF6F1C7262FF00743987 /* Assets.xcassets */,
 				EA5FCF711C7262FF00743987 /* LaunchScreen.storyboard */,
@@ -206,6 +221,8 @@
 				EA5FCFA21C74FD3500743987 /* RGTBaseHTTPRequest.m */,
 				EA5FCFA41C75002700743987 /* RGTGetCategoriesHTTPRequest.h */,
 				EA5FCFA51C75002700743987 /* RGTGetCategoriesHTTPRequest.m */,
+				EA5FCFC61C773F6E00743987 /* RGTGetSearchResultHTTPRequest.h */,
+				EA5FCFC71C773F6E00743987 /* RGTGetSearchResultHTTPRequest.m */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -237,6 +254,23 @@
 				EA5FCFB51C75FBA700743987 /* RGTMapping.m */,
 			);
 			path = Mapping;
+			sourceTree = "<group>";
+		};
+		EA5FCFBA1C7634C200743987 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA5FCFBB1C7635E100743987 /* RGTProductCollectionViewCell.h */,
+				EA5FCFBC1C7635E100743987 /* RGTProductCollectionViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA5FCFBE1C76361A00743987 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				EA5FCFBF1C76363900743987 /* RGTProductCollectionViewCell.xib */,
+			);
+			path = XIB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA5FCFC01C76363900743987 /* RGTProductCollectionViewCell.xib in Resources */,
 				EA5FCF731C7262FF00743987 /* LaunchScreen.storyboard in Resources */,
 				EA5FCF701C7262FF00743987 /* Assets.xcassets in Resources */,
 				EA5FCF6E1C7262FF00743987 /* Main.storyboard in Resources */,
@@ -391,7 +426,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA5FCFA31C74FD3500743987 /* RGTBaseHTTPRequest.m in Sources */,
+				EA5FCFB91C76342F00743987 /* RGTSearchResultCollectionViewController.m in Sources */,
 				EA5FCFB61C75FBA700743987 /* RGTMapping.m in Sources */,
+				EA5FCFC81C773F6E00743987 /* RGTGetSearchResultHTTPRequest.m in Sources */,
 				EA5FCF9C1C74F2F200743987 /* RGTAPIController.m in Sources */,
 				EA5FCF931C72636600743987 /* AppDelegate.m in Sources */,
 				EA5FCFB31C75FB8A00743987 /* RGTCategory.m in Sources */,
@@ -401,6 +438,7 @@
 				EA5FCF9F1C74F51B00743987 /* RGTAPIManager.m in Sources */,
 				EA5FCF651C7262FF00743987 /* main.m in Sources */,
 				EA5FCFA61C75002700743987 /* RGTGetCategoriesHTTPRequest.m in Sources */,
+				EA5FCFBD1C7635E100743987 /* RGTProductCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

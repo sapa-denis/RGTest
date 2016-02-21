@@ -14,6 +14,7 @@
 @implementation RGTCategory (CoreDataProperties)
 
 @dynamic categoryID;
-@dynamic name;
+@dynamic categoryName;
+@dynamic fullName;
 
 @end
