@@ -24,3 +24,37 @@
 }
 
 @end
+
+@implementation RGTProduct (Mapping)
+
++ (FEMMapping *)defaultMapping
+{
+	FEMMapping *mapping = [[FEMMapping alloc] initWithEntityName:@"RGTProduct"];
+	[mapping addAttributesFromDictionary:@{ @"price" : @"price",
+											@"name" : @"title",
+											@"fullDescription" : @"description",
+											@"productID" : @"listing_id"
+											}];
+	
+	mapping.primaryKey = @"productID";
+	
+	return mapping;
+}
+
+@end
+
+@implementation RGTListingElement (Mapping)
+
++ (FEMMapping *)defaultMapping
+{
+	FEMMapping *mapping = [[FEMMapping alloc] initWithObjectClass:[RGTListingElement class]];
+	[mapping addAttributesFromDictionary:@{ @"price" : @"price",
+											@"name" : @"title",
+											@"fullDescription" : @"description",
+											@"productID" : @"listing_id"
+											}];
+	
+	return mapping;
+}
+
+@end

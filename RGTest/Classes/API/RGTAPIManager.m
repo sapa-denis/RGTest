@@ -14,6 +14,8 @@
 @property (nonatomic, strong) AFHTTPSessionManager *sessionManager;
 @property (nonatomic, strong) NSString *token;
 
+@property (nonatomic) dispatch_queue_t backgroundQueue;
+
 @end
 
 @implementation RGTAPIManager
@@ -24,6 +26,8 @@
 	if (self) {
 		_sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:baseURL]];
 		_token = token;
+		
+		_backgroundQueue = dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0);
 	}
 	return self;
 }
@@ -35,7 +39,12 @@
 	NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithDictionary:request.parameters];
 	[parameters setObject:self.token forKey:@"api_key"];
 	
-	[self GETRequest:[request path] parameters:parameters success:success failure:failure];
+	
+	
+	__weak __block typeof(self) weakSelf = self;
+	dispatch_async(self.backgroundQueue, ^{
+		[weakSelf GETRequest:[request path] parameters:parameters success:success failure:failure];
+	});
 }
 
 - (void)GETRequest:(NSString *)path

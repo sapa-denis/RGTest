@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RGTSearchViewController : UIViewController
+@interface RGTSearchViewController : UIViewController 
 
 @end

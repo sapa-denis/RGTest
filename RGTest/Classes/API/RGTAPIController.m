@@ -43,11 +43,15 @@ static NSString *const kRGTAPIToken		= @"l6pdqjuf7hdf97h1yvzadfce";
 	[self.apiManager makeGETRequest:getCategories
 							success:^(id responseObject) {
 								[MagicalRecord saveWithBlock:^(NSManagedObjectContext * _Nonnull localContext) {
-									NSArray *categories = [FEMDeserializer collectionFromRepresentation:responseObject[@"results"] mapping:[RGTCategory defaultMapping] context:localContext];
+									[FEMDeserializer collectionFromRepresentation:responseObject[@"results"]
+																		  mapping:[RGTCategory defaultMapping]
+																		  context:localContext];
 									
+									
+								} completion:^(BOOL contextDidSave, NSError * _Nullable error) {
 									if (success) {
 										dispatch_async(dispatch_get_main_queue(), ^{
-											success(categories);
+											success(nil);
 										});
 									}
 								}];
@@ -65,7 +69,10 @@ static NSString *const kRGTAPIToken		= @"l6pdqjuf7hdf97h1yvzadfce";
 	
 	[self.apiManager makeGETRequest:getSearchResult
 							success:^(id responseObject) {
-								
+								NSArray *listings = [FEMDeserializer collectionFromRepresentation:responseObject[@"results"] mapping:[RGTListingElement defaultMapping]];
+								if (success) {
+									success(listings);
+								}
 							}
 							failure:failure];
 }

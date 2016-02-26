@@ -21,8 +21,8 @@
                             <constraint firstAttribute="width" constant="64" id="u9a-iv-p49"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khv-pq-FIh">
-                        <rect key="frame" x="82" y="29" width="310" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khv-pq-FIh">
+                        <rect key="frame" x="82" y="8" width="310" height="64"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -36,6 +36,7 @@
                 <constraint firstItem="9fL-MJ-bia" firstAttribute="top" secondItem="NJ4-SG-xOc" secondAttribute="top" constant="8" id="Orl-F8-GGj"/>
                 <constraint firstAttribute="trailing" secondItem="Khv-pq-FIh" secondAttribute="trailing" constant="8" id="W1R-S3-q6y"/>
                 <constraint firstItem="9fL-MJ-bia" firstAttribute="leading" secondItem="NJ4-SG-xOc" secondAttribute="leading" constant="8" id="ci2-ry-XAG"/>
+                <constraint firstItem="Khv-pq-FIh" firstAttribute="top" secondItem="NJ4-SG-xOc" secondAttribute="top" constant="8" id="sn5-5J-NaH"/>
                 <constraint firstItem="Khv-pq-FIh" firstAttribute="leading" secondItem="9fL-MJ-bia" secondAttribute="trailing" constant="10" id="vvJ-PN-aDN"/>
             </constraints>
             <size key="customSize" width="450" height="80"/>

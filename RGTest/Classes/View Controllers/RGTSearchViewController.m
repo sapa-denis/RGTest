@@ -33,7 +33,6 @@
 	[[RGTAPIController sharedController] getCategoriesWithSuccess:^(NSArray * categories) {
 		
 		weakSelf.categories = [RGTCategory MR_findAllSortedBy:@"fullName" ascending:YES];
-//		weakSelf.categories = categories;
 		[weakSelf.categoryPicker reloadAllComponents];
 	} failure:^(NSError *error) {
 		[[[UIAlertView alloc] initWithTitle:@"Failure" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
@@ -49,6 +48,12 @@
 
 - (IBAction)searchButtonTouchUp:(id)sender
 {
+	NSString *searchRequest = self.searchTextField.text;
+	if ([searchRequest isEqualToString:@""]) {
+		[[[UIAlertView alloc] initWithTitle:@"Search field cannot be empty" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+	} else {
+		[self performSegueWithIdentifier:@"RGTOpenSearchResultSegue" sender:sender];
+	}
 	
 }
 

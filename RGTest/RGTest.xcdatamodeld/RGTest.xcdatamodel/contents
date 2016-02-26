@@ -5,13 +5,16 @@
         <attribute name="categoryName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fullName" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="RGTProduct" syncable="YES">
+    <entity name="RGTProduct" representedClassName="RGTProduct" syncable="YES">
+        <attribute name="currencyCode" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fullDescription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="saved" optional="YES" attributeType="Boolean" syncable="YES"/>
     </entity>
     <elements>
         <element name="RGTCategory" positionX="-63" positionY="-18" width="128" height="90"/>
-        <element name="RGTProduct" positionX="-54" positionY="18" width="128" height="90"/>
+        <element name="RGTProduct" positionX="-54" positionY="18" width="128" height="135"/>
     </elements>
 </model>

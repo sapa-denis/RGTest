@@ -8,9 +8,13 @@
 
 #import "RGTSearchResultCollectionViewController.h"
 #import "RGTProductCollectionViewCell.h"
+#import "RGTProductDetailTableViewController.h"
 #import "RGTAPIController.h"
 
 #import "RGTCategory.h"
+#import "RGTListingElement.h"
+
+#import "RGTProduct.h"
 
 @interface RGTSearchResultCollectionViewController ()
 
@@ -47,6 +51,8 @@ static NSString *const reuseIdentifier = @"RGTProductCollectionViewCell";
 	[super viewWillAppear:animated];
 	[_refreshControl beginRefreshing];
 	[self startRefresh:nil];
+	
+
 }
 
 #pragma mark - User Actions 
@@ -57,24 +63,26 @@ static NSString *const reuseIdentifier = @"RGTProductCollectionViewCell";
 	[[RGTAPIController sharedController] getSearchResultWithRequest:self.seatchRequest
 														andCategory:self.category.categoryName
 															success:^(id responseObject) {
+																weakSelf.results = responseObject;
 																
 																[weakSelf.collectionView reloadData];
-																
 																[weakSelf.refreshControl endRefreshing];
 															} failure:^(NSError *error) {
 																[weakSelf.refreshControl endRefreshing];
 															}];
 }
 
-/*
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+	if ([[segue identifier] isEqualToString:@"RGTOpenSearchDetailSegue"]) {
+		RGTListingElement *listingElement = sender;
+		RGTProductDetailTableViewController *destinationViewController = (RGTProductDetailTableViewController *)[segue destinationViewController];
+		
+		destinationViewController.productInfo = listingElement;
+	}
 }
-*/
 
 #pragma mark - UICollectionViewDataSource
 
@@ -94,8 +102,9 @@ static NSString *const reuseIdentifier = @"RGTProductCollectionViewCell";
 {
     RGTProductCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier
 																				   forIndexPath:indexPath];
+	RGTListingElement *listingElement = [self.results objectAtIndex:indexPath.row];
 	
-//	cell.productName.text = @"test";
+	cell.productName.text = listingElement.name;
 	
     return cell;
 }
@@ -119,33 +128,9 @@ referenceSizeForHeaderInSection:(NSInteger)section
 
 #pragma mark - UICollectionViewDelegate
 
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(nonnull NSIndexPath *)indexPath
+{
+	[self performSegueWithIdentifier:@"RGTOpenSearchDetailSegue" sender:[self.results objectAtIndex:indexPath.row]];
 }
-*/
-
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
-}
-
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
 
 @end
