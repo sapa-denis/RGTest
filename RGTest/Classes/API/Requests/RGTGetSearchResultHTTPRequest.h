@@ -11,6 +11,9 @@
 
 @interface RGTGetSearchResultHTTPRequest : NSObject <RGTBaseHTTPRequest>
 
-- (instancetype)initWithCategory:(NSString *)category andSearchRequest:(NSString *)keywords;
+- (instancetype)initWithCategory:(NSString *)category
+				andSearchRequest:(NSString *)keywords
+						pageSize:(NSUInteger)pageSize
+						  offset:(NSUInteger)offset;
 
 @end

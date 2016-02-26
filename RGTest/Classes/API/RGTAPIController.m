@@ -61,18 +61,30 @@ static NSString *const kRGTAPIToken		= @"l6pdqjuf7hdf97h1yvzadfce";
 
 - (void)getSearchResultWithRequest:(NSString *)searchRequest
 					   andCategory:(NSString *)category
-						   success:(void (^)(id responseObject))success
+							offset:(NSUInteger)offset
+						  pageSize:(NSUInteger)pageSize
+						   success:(void (^)(id responseObject, NSUInteger count))success
 						   failure:(void (^)(NSError *error))failure
 {
-	RGTGetSearchResultHTTPRequest *getSearchResult = [[RGTGetSearchResultHTTPRequest alloc] initWithCategory:category
-																							andSearchRequest:searchRequest];
+	RGTGetSearchResultHTTPRequest *getSearchResult =
+		[[RGTGetSearchResultHTTPRequest alloc] initWithCategory:category
+											   andSearchRequest:searchRequest
+													   pageSize:pageSize
+														 offset:offset];
+	
+	dispatch_queue_t parseQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
 	
 	[self.apiManager makeGETRequest:getSearchResult
 							success:^(id responseObject) {
-								NSArray *listings = [FEMDeserializer collectionFromRepresentation:responseObject[@"results"] mapping:[RGTListingElement defaultMapping]];
-								if (success) {
-									success(listings);
-								}
+								dispatch_async(parseQueue, ^{
+									NSArray *listings = [FEMDeserializer collectionFromRepresentation:responseObject[@"results"] mapping:[RGTListingElement defaultMapping]];
+									NSUInteger count = [[responseObject objectForKey:@"count"] unsignedIntegerValue];
+									if (success) {
+										dispatch_async(dispatch_get_main_queue(), ^{
+											success(listings, count);
+										});
+									}
+								});
 							}
 							failure:failure];
 }

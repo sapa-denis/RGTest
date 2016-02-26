@@ -12,12 +12,17 @@
 
 @synthesize parameters;
 
-- (instancetype)initWithCategory:(NSString *)category andSearchRequest:(NSString *)keywords
+- (instancetype)initWithCategory:(NSString *)category
+				andSearchRequest:(NSString *)keywords
+						pageSize:(NSUInteger)pageSize
+						  offset:(NSUInteger)offset
 {
 	self = [super init];
 	if (self) {
 		parameters = @{ @"category" : category,
-						@"keywords" : keywords
+						@"keywords" : keywords,
+						@"limit" : @(pageSize),
+						@"offset": @(offset)
 						};
 	}
 	return self;

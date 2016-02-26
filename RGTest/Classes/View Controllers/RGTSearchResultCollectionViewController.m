@@ -16,11 +16,15 @@
 
 #import "RGTProduct.h"
 
+const NSUInteger kRGTPSearchDefaultPageSize = 25;
+
 @interface RGTSearchResultCollectionViewController ()
 
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
 
 @property (nonatomic, strong) NSArray *results;
+
+@property (nonatomic) NSUInteger searchResultsCount;
 
 @end
 
@@ -62,7 +66,12 @@ static NSString *const reuseIdentifier = @"RGTProductCollectionViewCell";
 	__weak __block typeof(self) weakSelf = self;
 	[[RGTAPIController sharedController] getSearchResultWithRequest:self.seatchRequest
 														andCategory:self.category.categoryName
-															success:^(id responseObject) {
+															 offset:0
+														   pageSize:kRGTPSearchDefaultPageSize
+															success:^(id responseObject, NSUInteger count) {
+																
+																weakSelf.searchResultsCount = count;
+																
 																weakSelf.results = responseObject;
 																
 																[weakSelf.collectionView reloadData];
@@ -70,6 +79,41 @@ static NSString *const reuseIdentifier = @"RGTProductCollectionViewCell";
 															} failure:^(NSError *error) {
 																[weakSelf.refreshControl endRefreshing];
 															}];
+}
+
+#pragma mark - Private
+
+- (void)fetchNextPage
+{
+	__weak __block typeof(self) weakSelf = self;
+	
+	NSUInteger currentCount = self.results.count;
+	
+	if (currentCount < self.searchResultsCount) {
+		[[RGTAPIController sharedController] getSearchResultWithRequest:self.seatchRequest
+															andCategory:self.category.categoryName
+																 offset:currentCount
+															   pageSize:kRGTPSearchDefaultPageSize
+																success:^(NSArray *responseObject, NSUInteger count) {
+																	
+																	NSIndexSet *insertIndex = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(weakSelf.results.count, responseObject.count)];
+																	
+																	NSMutableArray *insertItemsArray=[NSMutableArray array];
+																	[insertIndex enumerateIndexesUsingBlock:^(NSUInteger idx, BOOL *stop) {
+																		[insertItemsArray addObject:[NSIndexPath indexPathForRow:idx inSection:0]];
+																	}];
+																	
+																	weakSelf.results = [weakSelf.results arrayByAddingObjectsFromArray:responseObject];
+																	
+
+																	
+																	[weakSelf.collectionView insertItemsAtIndexPaths:insertItemsArray];
+																	
+																} failure:^(NSError *error) {
+																	
+																}];
+	}
+
 }
 
 #pragma mark - Navigation
@@ -102,10 +146,14 @@ static NSString *const reuseIdentifier = @"RGTProductCollectionViewCell";
 {
     RGTProductCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier
 																				   forIndexPath:indexPath];
-	RGTListingElement *listingElement = [self.results objectAtIndex:indexPath.row];
+	RGTListingElement *listingElement = [self.results objectAtIndex:indexPath.item];
 	
 	cell.productName.text = listingElement.name;
 	
+	
+	if (indexPath.item == self.results.count - 1){
+		[self fetchNextPage];
+	}
     return cell;
 }
 

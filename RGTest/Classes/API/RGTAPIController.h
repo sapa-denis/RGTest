@@ -17,7 +17,9 @@
 
 - (void)getSearchResultWithRequest:(NSString *)searchRequest
 					   andCategory:(NSString *)category
-						   success:(void (^)(id responseObject))success
+							offset:(NSUInteger)offset
+						  pageSize:(NSUInteger)pageSize
+						   success:(void (^)(id responseObject, NSUInteger count))success
 						   failure:(void (^)(NSError *error))failure;
 
 @end
