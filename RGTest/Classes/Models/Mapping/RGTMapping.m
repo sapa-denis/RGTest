@@ -33,7 +33,8 @@
 	[mapping addAttributesFromDictionary:@{ @"price" : @"price",
 											@"name" : @"title",
 											@"fullDescription" : @"description",
-											@"productID" : @"listing_id"
+											@"productID" : @"listing_id",
+											@"currencyCode" : @"currency_code"
 											}];
 	
 	mapping.primaryKey = @"productID";
@@ -51,7 +52,8 @@
 	[mapping addAttributesFromDictionary:@{ @"price" : @"price",
 											@"name" : @"title",
 											@"fullDescription" : @"description",
-											@"productID" : @"listing_id"
+											@"productID" : @"listing_id",
+											@"currencyCode" : @"currency_code"
 											}];
 	
 	return mapping;

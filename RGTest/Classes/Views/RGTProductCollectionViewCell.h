@@ -11,5 +11,7 @@
 @interface RGTProductCollectionViewCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *productName;
+@property (weak, nonatomic) IBOutlet UIImageView *productImage;
+
 
 @end

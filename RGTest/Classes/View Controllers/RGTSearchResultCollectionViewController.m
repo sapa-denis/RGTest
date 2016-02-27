@@ -7,6 +7,9 @@
 //
 
 #import "RGTSearchResultCollectionViewController.h"
+
+#import <SDWebImage/UIImageView+WebCache.h>
+
 #import "RGTProductCollectionViewCell.h"
 #import "RGTProductDetailTableViewController.h"
 #import "RGTAPIController.h"
@@ -150,6 +153,19 @@ static NSString *const reuseIdentifier = @"RGTProductCollectionViewCell";
 	
 	cell.productName.text = listingElement.name;
 	
+	if (listingElement.image75URL == nil) {
+		[[RGTAPIController sharedController] getImageURLsForProduct:[listingElement.productID stringValue]
+															success:^(NSString *imageSmallURL, NSString *imageLargeURL) {
+																listingElement.image75URL = imageSmallURL;
+																listingElement.image570URL = imageLargeURL;
+																[cell.productImage sd_setImageWithURL:[NSURL URLWithString:imageSmallURL]];
+															}
+															failure:^(NSError *error) {
+																
+															}];
+	} else {
+		[cell.productImage sd_setImageWithURL:[NSURL URLWithString:listingElement.image75URL]];
+	}
 	
 	if (indexPath.item == self.results.count - 1){
 		[self fetchNextPage];

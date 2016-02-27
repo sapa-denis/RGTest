@@ -22,4 +22,8 @@
 						   success:(void (^)(id responseObject, NSUInteger count))success
 						   failure:(void (^)(NSError *error))failure;
 
+- (void)getImageURLsForProduct:(NSString *)productID
+					   success:(void (^)(NSString *imageSmallURL, NSString *imageLargeURL))success
+					   failure:(void (^)(NSError *error))failure;
+
 @end

@@ -10,4 +10,10 @@
 
 @implementation RGTProductCollectionViewCell
 
+- (void)prepareForReuse
+{
+	[super prepareForReuse];
+	self.productImage.image = nil;
+}
+
 @end

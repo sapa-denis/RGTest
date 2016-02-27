@@ -7,6 +7,9 @@
 //
 
 #import "RGTFavoritesCollectionViewController.h"
+
+#import <SDWebImage/UIImageView+WebCache.h>
+
 #import "RGTProductCollectionViewCell.h"
 
 #import "RGTProductDetailTableViewController.h"
@@ -91,6 +94,8 @@ static NSString * const reuseIdentifier = @"RGTProductCollectionViewCell";
 	RGTProduct *product = [_fetchedResultsController objectAtIndexPath:indexPath];
 	
 	cell.productName.text = product.name;
+	
+	[cell.productImage sd_setImageWithURL:[NSURL URLWithString:product.image75URL]];
 
     return cell;
 }

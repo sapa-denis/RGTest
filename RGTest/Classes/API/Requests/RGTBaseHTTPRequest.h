@@ -15,7 +15,3 @@
 @property (nonatomic, strong, readonly) NSString *path;
 
 @end
-
-//@interface RGTBaseHTTPRequest : NSObject
-//
-//@end

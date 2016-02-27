@@ -8,6 +8,8 @@
 
 #import "RGTProductDetailTableViewController.h"
 
+#import <SDWebImage/UIImageView+WebCache.h>
+
 #import "RGTListingElement.h"
 #import "RGTProduct.h"
 
@@ -15,8 +17,12 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+
+@property (weak, nonatomic) IBOutlet UIImageView *productImage;
+
 @property (weak, nonatomic) IBOutlet UITextView *descriptionText;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *saveButton;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *deleteButton;
 
 @property (nonatomic, strong) UITextView *templateDescriptionTextView;
 
@@ -41,13 +47,16 @@
 	
 	self.descriptionText.text = self.productInfo.fullDescription;
 	
+	
+	[self.productImage sd_setImageWithURL:[NSURL URLWithString:self.productInfo.image570URL]];
+	
 	RGTProduct *existingProduct = [RGTProduct MR_findFirstByAttribute:@"productID"
 															withValue:self.productInfo.productID];
 	
 	if (existingProduct) {
-		self.navigationItem.rightBarButtonItems = @[];
+		self.navigationItem.rightBarButtonItems = @[self.deleteButton];
 	} else {
-		self.navigationItem.rightBarButtonItem = self.saveButton;
+		self.navigationItem.rightBarButtonItems = @[self.saveButton];
 	}
 }
 
@@ -65,8 +74,36 @@
 		product.productID = weakSelf.productInfo.productID;
 		
 		product.currencyCode = weakSelf.productInfo.currencyCode;
+		
+		product.image75URL = weakSelf.productInfo.image75URL;
+		product.image570URL = weakSelf.productInfo.image570URL;
+	} completion:^(BOOL contextDidSave, NSError * _Nullable error) {
+		if (contextDidSave) {
+			dispatch_async(dispatch_get_main_queue(), ^{
+				weakSelf.navigationItem.rightBarButtonItems = @[weakSelf.deleteButton];
+			});
+		}
 	}];
-	[self.navigationController popViewControllerAnimated:YES];
+	
+//	[self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)deleteButtonTouchUp:(id)sender
+{
+	__weak __block typeof(self) weakSelf = self;
+	[MagicalRecord saveWithBlock:^(NSManagedObjectContext * _Nonnull localContext) {
+		RGTProduct *prod = [RGTProduct MR_findFirstByAttribute:@"productID"
+													 withValue:[weakSelf.productInfo.productID stringValue]];
+		[prod MR_deleteEntityInContext:localContext];
+	} completion:^(BOOL contextDidSave, NSError * _Nullable error) {
+		if (contextDidSave) {
+			dispatch_async(dispatch_get_main_queue(), ^{
+				weakSelf.navigationItem.rightBarButtonItems = @[weakSelf.saveButton];
+			});
+			
+		}
+	}];
+	
 }
 
 #pragma mark - UITableViewDataSource

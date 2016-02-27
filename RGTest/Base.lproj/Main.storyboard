@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -231,22 +232,31 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="3WK-sy-w0b">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="nOg-II-qUX">
-                            <connections>
-                                <action selector="seveButtonTouchUp:" destination="97m-kO-mvO" id="kZa-rY-UrB"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Delete" id="biY-X2-9kt">
+                                <connections>
+                                    <action selector="deleteButtonTouchUp:" destination="97m-kO-mvO" id="5sh-er-WAV"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="save" id="nOg-II-qUX">
+                                <connections>
+                                    <action selector="seveButtonTouchUp:" destination="97m-kO-mvO" id="kZa-rY-UrB"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="deleteButton" destination="biY-X2-9kt" id="RL0-Vd-sW5"/>
                         <outlet property="descriptionText" destination="pjF-kn-IkC" id="KZW-7c-H7S"/>
                         <outlet property="priceLabel" destination="eHq-o3-c3Z" id="I3c-t0-igN"/>
+                        <outlet property="productImage" destination="CGe-ae-JiS" id="Mfs-TO-Kdd"/>
                         <outlet property="saveButton" destination="nOg-II-qUX" id="2A1-Fb-tyI"/>
                         <outlet property="titleLabel" destination="4TF-Ta-RgO" id="7zl-OH-Wf1"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sVF-su-5Th" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2316" y="71"/>
+            <point key="canvasLocation" x="2313" y="69"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1FP-02-oeq">

@@ -12,6 +12,7 @@
 
 #import "RGTGetCategoriesHTTPRequest.h"
 #import "RGTGetSearchResultHTTPRequest.h"
+#import "RGTGetImageURLsHTTPRequest.h"
 
 static NSString *const kRGTAPIBaseURL	= @"https://openapi.etsy.com/v2/";
 static NSString *const kRGTAPIToken		= @"l6pdqjuf7hdf97h1yvzadfce";
@@ -87,6 +88,29 @@ static NSString *const kRGTAPIToken		= @"l6pdqjuf7hdf97h1yvzadfce";
 								});
 							}
 							failure:failure];
+}
+
+- (void)getImageURLsForProduct:(NSString *)productID
+					   success:(void (^)(NSString *imageSmallURL, NSString *imageLargeURL))success
+					   failure:(void (^)(NSError *error))failure
+{
+	RGTGetImageURLsHTTPRequest *getImageURLs = [[RGTGetImageURLsHTTPRequest alloc] initWithProduct:productID];
+	
+	
+	[self.apiManager makeGETRequest:getImageURLs success:^(NSDictionary *responseObject) {
+
+		
+		NSArray *results = responseObject[@"results"];
+		if ([results count] > 0) {
+			NSDictionary *imagesInfo = results[0];
+			NSString * imageSmallURL = imagesInfo[@"url_75x75"];
+			NSString *imageLargeURL = imagesInfo[@"url_570xN"];
+			if (success) {
+				success(imageSmallURL, imageLargeURL);
+			}
+		}
+
+	} failure:failure];
 }
 
 @end

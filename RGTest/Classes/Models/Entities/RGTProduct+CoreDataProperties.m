@@ -21,4 +21,7 @@
 
 @dynamic currencyCode;
 
+@dynamic image75URL;
+@dynamic image570URL;
+
 @end

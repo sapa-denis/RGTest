@@ -23,6 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, retain) NSString *currencyCode;
 
+@property (nullable, nonatomic, retain) NSString *image75URL;
+@property (nullable, nonatomic, retain) NSString *image570URL;
+
 @end
 
 NS_ASSUME_NONNULL_END

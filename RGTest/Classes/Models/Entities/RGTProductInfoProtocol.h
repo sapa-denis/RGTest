@@ -17,4 +17,7 @@
 
 @property (nullable, nonatomic, strong, readonly) NSString *currencyCode;
 
+@property (nullable, nonatomic, strong, readonly) NSString *image75URL;
+@property (nullable, nonatomic, strong, readonly) NSString *image570URL;
+
 @end
