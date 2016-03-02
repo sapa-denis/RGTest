@@ -15,25 +15,27 @@
 		EA5FCF731C7262FF00743987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5FCF711C7262FF00743987 /* LaunchScreen.storyboard */; };
 		EA5FCF7E1C7262FF00743987 /* RGTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCF7D1C7262FF00743987 /* RGTestTests.m */; };
 		EA5FCF931C72636600743987 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCF8F1C72636600743987 /* AppDelegate.m */; };
-		EA5FCF991C74A1B200743987 /* RGTSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCF981C74A1B200743987 /* RGTSearchViewController.m */; };
 		EA5FCF9C1C74F2F200743987 /* RGTAPIController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCF9B1C74F2F200743987 /* RGTAPIController.m */; };
 		EA5FCF9F1C74F51B00743987 /* RGTAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCF9E1C74F51B00743987 /* RGTAPIManager.m */; };
 		EA5FCFA61C75002700743987 /* RGTGetCategoriesHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFA51C75002700743987 /* RGTGetCategoriesHTTPRequest.m */; };
 		EA5FCFAA1C75FA4200743987 /* RGTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFA81C75FA4200743987 /* RGTest.xcdatamodeld */; };
-		EA5FCFB21C75FB8A00743987 /* RGTCategory+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFAF1C75FB8A00743987 /* RGTCategory+CoreDataProperties.m */; };
-		EA5FCFB31C75FB8A00743987 /* RGTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFB11C75FB8A00743987 /* RGTCategory.m */; };
-		EA5FCFB61C75FBA700743987 /* RGTMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFB51C75FBA700743987 /* RGTMapping.m */; };
-		EA5FCFB91C76342F00743987 /* RGTSearchResultCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFB81C76342F00743987 /* RGTSearchResultCollectionViewController.m */; };
-		EA5FCFBD1C7635E100743987 /* RGTProductCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFBC1C7635E100743987 /* RGTProductCollectionViewCell.m */; };
 		EA5FCFC01C76363900743987 /* RGTProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA5FCFBF1C76363900743987 /* RGTProductCollectionViewCell.xib */; };
 		EA5FCFC81C773F6E00743987 /* RGTGetSearchResultHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFC71C773F6E00743987 /* RGTGetSearchResultHTTPRequest.m */; };
-		EA5FCFCD1C79C2AD00743987 /* RGTProduct+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFCA1C79C2AD00743987 /* RGTProduct+CoreDataProperties.m */; };
-		EA5FCFCE1C79C2AD00743987 /* RGTProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCFCC1C79C2AD00743987 /* RGTProduct.m */; };
-		EA7F7DD31C7B37C3001B5F50 /* RGTProductDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7F7DD21C7B37C3001B5F50 /* RGTProductDetailTableViewController.m */; };
-		EA7F7DD61C7C8C52001B5F50 /* RGTListingElement.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7F7DD51C7C8C52001B5F50 /* RGTListingElement.m */; };
-		EA7F7DD91C7CD306001B5F50 /* RGTFavoritesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7F7DD81C7CD306001B5F50 /* RGTFavoritesCollectionViewController.m */; };
 		EA7F7DE11C81C774001B5F50 /* RGTGetImageURLsHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7F7DE01C81C774001B5F50 /* RGTGetImageURLsHTTPRequest.m */; };
 		EA7F7DF61C8486C8001B5F50 /* RGTSearchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7F7DF51C8486C8001B5F50 /* RGTSearchTest.m */; };
+		EA7F7E001C86E1EC001B5F50 /* RGTFavoritesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7F7DF91C86E1EC001B5F50 /* RGTFavoritesCollectionViewController.m */; };
+		EA7F7E011C86E1EC001B5F50 /* RGTProductDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7F7DFB1C86E1EC001B5F50 /* RGTProductDetailTableViewController.m */; };
+		EA7F7E021C86E1EC001B5F50 /* RGTSearchResultCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7F7DFD1C86E1EC001B5F50 /* RGTSearchResultCollectionViewController.m */; };
+		EA7F7E031C86E1EC001B5F50 /* RGTSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7F7DFF1C86E1EC001B5F50 /* RGTSearchViewController.m */; };
+		EA7F7E141C86E206001B5F50 /* RGTCategory+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7F7E071C86E206001B5F50 /* RGTCategory+CoreDataProperties.m */; };
+		EA7F7E151C86E206001B5F50 /* RGTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7F7E091C86E206001B5F50 /* RGTCategory.m */; };
+		EA7F7E161C86E206001B5F50 /* RGTListingElement.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7F7E0B1C86E206001B5F50 /* RGTListingElement.m */; };
+		EA7F7E171C86E206001B5F50 /* RGTProduct+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7F7E0D1C86E206001B5F50 /* RGTProduct+CoreDataProperties.m */; };
+		EA7F7E181C86E206001B5F50 /* RGTProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7F7E0F1C86E206001B5F50 /* RGTProduct.m */; };
+		EA7F7E191C86E206001B5F50 /* RGTMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7F7E131C86E206001B5F50 /* RGTMapping.m */; };
+		EA7F7E1D1C86E217001B5F50 /* RGTProductCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7F7E1C1C86E217001B5F50 /* RGTProductCollectionViewCell.m */; };
+		EA7F7E1E1C86E223001B5F50 /* RGTSearchResultCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7F7DFD1C86E1EC001B5F50 /* RGTSearchResultCollectionViewController.m */; };
+		EA7F7E1F1C86E238001B5F50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5FCF6C1C7262FF00743987 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +65,6 @@
 		EA5FCF7F1C7262FF00743987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA5FCF8E1C72636600743987 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EA5FCF8F1C72636600743987 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EA5FCF971C74A1B200743987 /* RGTSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTSearchViewController.h; sourceTree = "<group>"; };
-		EA5FCF981C74A1B200743987 /* RGTSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTSearchViewController.m; sourceTree = "<group>"; };
 		EA5FCF9A1C74F2F200743987 /* RGTAPIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTAPIController.h; sourceTree = "<group>"; };
 		EA5FCF9B1C74F2F200743987 /* RGTAPIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTAPIController.m; sourceTree = "<group>"; };
 		EA5FCF9D1C74F51B00743987 /* RGTAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTAPIManager.h; sourceTree = "<group>"; };
@@ -74,34 +74,36 @@
 		EA5FCFA51C75002700743987 /* RGTGetCategoriesHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTGetCategoriesHTTPRequest.m; sourceTree = "<group>"; };
 		EA5FCFA71C75F95F00743987 /* RGTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RGTest-Prefix.pch"; sourceTree = "<group>"; };
 		EA5FCFA91C75FA4200743987 /* RGTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RGTest.xcdatamodel; sourceTree = "<group>"; };
-		EA5FCFAE1C75FB8A00743987 /* RGTCategory+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RGTCategory+CoreDataProperties.h"; sourceTree = "<group>"; };
-		EA5FCFAF1C75FB8A00743987 /* RGTCategory+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RGTCategory+CoreDataProperties.m"; sourceTree = "<group>"; };
-		EA5FCFB01C75FB8A00743987 /* RGTCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTCategory.h; sourceTree = "<group>"; };
-		EA5FCFB11C75FB8A00743987 /* RGTCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTCategory.m; sourceTree = "<group>"; };
-		EA5FCFB41C75FBA700743987 /* RGTMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTMapping.h; sourceTree = "<group>"; };
-		EA5FCFB51C75FBA700743987 /* RGTMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTMapping.m; sourceTree = "<group>"; };
-		EA5FCFB71C76342F00743987 /* RGTSearchResultCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTSearchResultCollectionViewController.h; sourceTree = "<group>"; };
-		EA5FCFB81C76342F00743987 /* RGTSearchResultCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTSearchResultCollectionViewController.m; sourceTree = "<group>"; };
-		EA5FCFBB1C7635E100743987 /* RGTProductCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTProductCollectionViewCell.h; sourceTree = "<group>"; };
-		EA5FCFBC1C7635E100743987 /* RGTProductCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTProductCollectionViewCell.m; sourceTree = "<group>"; };
 		EA5FCFBF1C76363900743987 /* RGTProductCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RGTProductCollectionViewCell.xib; sourceTree = "<group>"; };
 		EA5FCFC61C773F6E00743987 /* RGTGetSearchResultHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTGetSearchResultHTTPRequest.h; sourceTree = "<group>"; };
 		EA5FCFC71C773F6E00743987 /* RGTGetSearchResultHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTGetSearchResultHTTPRequest.m; sourceTree = "<group>"; };
-		EA5FCFC91C79C2AD00743987 /* RGTProduct+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RGTProduct+CoreDataProperties.h"; sourceTree = "<group>"; };
-		EA5FCFCA1C79C2AD00743987 /* RGTProduct+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RGTProduct+CoreDataProperties.m"; sourceTree = "<group>"; };
-		EA5FCFCB1C79C2AD00743987 /* RGTProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTProduct.h; sourceTree = "<group>"; };
-		EA5FCFCC1C79C2AD00743987 /* RGTProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTProduct.m; sourceTree = "<group>"; };
-		EA7F7DD11C7B37C3001B5F50 /* RGTProductDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTProductDetailTableViewController.h; sourceTree = "<group>"; };
-		EA7F7DD21C7B37C3001B5F50 /* RGTProductDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTProductDetailTableViewController.m; sourceTree = "<group>"; };
-		EA7F7DD41C7C8C52001B5F50 /* RGTListingElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTListingElement.h; sourceTree = "<group>"; };
-		EA7F7DD51C7C8C52001B5F50 /* RGTListingElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTListingElement.m; sourceTree = "<group>"; };
-		EA7F7DD71C7CD306001B5F50 /* RGTFavoritesCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTFavoritesCollectionViewController.h; sourceTree = "<group>"; };
-		EA7F7DD81C7CD306001B5F50 /* RGTFavoritesCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTFavoritesCollectionViewController.m; sourceTree = "<group>"; };
-		EA7F7DDE1C7CFA4D001B5F50 /* RGTProductInfoProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTProductInfoProtocol.h; sourceTree = "<group>"; };
 		EA7F7DDF1C81C774001B5F50 /* RGTGetImageURLsHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTGetImageURLsHTTPRequest.h; sourceTree = "<group>"; };
 		EA7F7DE01C81C774001B5F50 /* RGTGetImageURLsHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTGetImageURLsHTTPRequest.m; sourceTree = "<group>"; };
 		EA7F7DF41C8486C8001B5F50 /* RGTSearchTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTSearchTest.h; sourceTree = "<group>"; };
 		EA7F7DF51C8486C8001B5F50 /* RGTSearchTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTSearchTest.m; sourceTree = "<group>"; };
+		EA7F7DF81C86E1EC001B5F50 /* RGTFavoritesCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTFavoritesCollectionViewController.h; sourceTree = "<group>"; };
+		EA7F7DF91C86E1EC001B5F50 /* RGTFavoritesCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTFavoritesCollectionViewController.m; sourceTree = "<group>"; };
+		EA7F7DFA1C86E1EC001B5F50 /* RGTProductDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTProductDetailTableViewController.h; sourceTree = "<group>"; };
+		EA7F7DFB1C86E1EC001B5F50 /* RGTProductDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTProductDetailTableViewController.m; sourceTree = "<group>"; };
+		EA7F7DFC1C86E1EC001B5F50 /* RGTSearchResultCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTSearchResultCollectionViewController.h; sourceTree = "<group>"; };
+		EA7F7DFD1C86E1EC001B5F50 /* RGTSearchResultCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTSearchResultCollectionViewController.m; sourceTree = "<group>"; };
+		EA7F7DFE1C86E1EC001B5F50 /* RGTSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTSearchViewController.h; sourceTree = "<group>"; };
+		EA7F7DFF1C86E1EC001B5F50 /* RGTSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTSearchViewController.m; sourceTree = "<group>"; };
+		EA7F7E061C86E206001B5F50 /* RGTCategory+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RGTCategory+CoreDataProperties.h"; sourceTree = "<group>"; };
+		EA7F7E071C86E206001B5F50 /* RGTCategory+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RGTCategory+CoreDataProperties.m"; sourceTree = "<group>"; };
+		EA7F7E081C86E206001B5F50 /* RGTCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTCategory.h; sourceTree = "<group>"; };
+		EA7F7E091C86E206001B5F50 /* RGTCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTCategory.m; sourceTree = "<group>"; };
+		EA7F7E0A1C86E206001B5F50 /* RGTListingElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTListingElement.h; sourceTree = "<group>"; };
+		EA7F7E0B1C86E206001B5F50 /* RGTListingElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTListingElement.m; sourceTree = "<group>"; };
+		EA7F7E0C1C86E206001B5F50 /* RGTProduct+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RGTProduct+CoreDataProperties.h"; sourceTree = "<group>"; };
+		EA7F7E0D1C86E206001B5F50 /* RGTProduct+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RGTProduct+CoreDataProperties.m"; sourceTree = "<group>"; };
+		EA7F7E0E1C86E206001B5F50 /* RGTProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTProduct.h; sourceTree = "<group>"; };
+		EA7F7E0F1C86E206001B5F50 /* RGTProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTProduct.m; sourceTree = "<group>"; };
+		EA7F7E101C86E206001B5F50 /* RGTProductInfoProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTProductInfoProtocol.h; sourceTree = "<group>"; };
+		EA7F7E121C86E206001B5F50 /* RGTMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTMapping.h; sourceTree = "<group>"; };
+		EA7F7E131C86E206001B5F50 /* RGTMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTMapping.m; sourceTree = "<group>"; };
+		EA7F7E1B1C86E217001B5F50 /* RGTProductCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTProductCollectionViewCell.h; sourceTree = "<group>"; };
+		EA7F7E1C1C86E217001B5F50 /* RGTProductCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTProductCollectionViewCell.m; sourceTree = "<group>"; };
 		F1DF068C0A64C154986260D6 /* Pods-RGTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RGTestTests/Pods-RGTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,28 +203,13 @@
 			children = (
 				EA5FCF951C73A21600743987 /* API */,
 				EA7F7DDA1C7CDBD7001B5F50 /* Categories */,
-				EA5FCFAB1C75FAD900743987 /* Models */,
-				EA5FCF901C72636600743987 /* View Controllers */,
-				EA5FCFBA1C7634C200743987 /* Views */,
+				EA7F7E041C86E206001B5F50 /* Models */,
+				EA7F7DF71C86E1EC001B5F50 /* View Controllers */,
+				EA7F7E1A1C86E217001B5F50 /* Views */,
 				EA5FCF8E1C72636600743987 /* AppDelegate.h */,
 				EA5FCF8F1C72636600743987 /* AppDelegate.m */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		EA5FCF901C72636600743987 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				EA7F7DD71C7CD306001B5F50 /* RGTFavoritesCollectionViewController.h */,
-				EA7F7DD81C7CD306001B5F50 /* RGTFavoritesCollectionViewController.m */,
-				EA7F7DD11C7B37C3001B5F50 /* RGTProductDetailTableViewController.h */,
-				EA7F7DD21C7B37C3001B5F50 /* RGTProductDetailTableViewController.m */,
-				EA5FCFB71C76342F00743987 /* RGTSearchResultCollectionViewController.h */,
-				EA5FCFB81C76342F00743987 /* RGTSearchResultCollectionViewController.m */,
-				EA5FCF971C74A1B200743987 /* RGTSearchViewController.h */,
-				EA5FCF981C74A1B200743987 /* RGTSearchViewController.m */,
-			);
-			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		EA5FCF951C73A21600743987 /* API */ = {
@@ -263,51 +250,6 @@
 			path = Requests;
 			sourceTree = "<group>";
 		};
-		EA5FCFAB1C75FAD900743987 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				EA5FCFAC1C75FAD900743987 /* Entities */,
-				EA5FCFAD1C75FAD900743987 /* Mapping */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		EA5FCFAC1C75FAD900743987 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				EA5FCFAE1C75FB8A00743987 /* RGTCategory+CoreDataProperties.h */,
-				EA5FCFAF1C75FB8A00743987 /* RGTCategory+CoreDataProperties.m */,
-				EA5FCFB01C75FB8A00743987 /* RGTCategory.h */,
-				EA5FCFB11C75FB8A00743987 /* RGTCategory.m */,
-				EA5FCFC91C79C2AD00743987 /* RGTProduct+CoreDataProperties.h */,
-				EA5FCFCA1C79C2AD00743987 /* RGTProduct+CoreDataProperties.m */,
-				EA5FCFCB1C79C2AD00743987 /* RGTProduct.h */,
-				EA5FCFCC1C79C2AD00743987 /* RGTProduct.m */,
-				EA7F7DD41C7C8C52001B5F50 /* RGTListingElement.h */,
-				EA7F7DD51C7C8C52001B5F50 /* RGTListingElement.m */,
-				EA7F7DDE1C7CFA4D001B5F50 /* RGTProductInfoProtocol.h */,
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
-		EA5FCFAD1C75FAD900743987 /* Mapping */ = {
-			isa = PBXGroup;
-			children = (
-				EA5FCFB41C75FBA700743987 /* RGTMapping.h */,
-				EA5FCFB51C75FBA700743987 /* RGTMapping.m */,
-			);
-			path = Mapping;
-			sourceTree = "<group>";
-		};
-		EA5FCFBA1C7634C200743987 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				EA5FCFBB1C7635E100743987 /* RGTProductCollectionViewCell.h */,
-				EA5FCFBC1C7635E100743987 /* RGTProductCollectionViewCell.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		EA5FCFBE1C76361A00743987 /* XIB */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,6 +263,67 @@
 			children = (
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		EA7F7DF71C86E1EC001B5F50 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA7F7DF81C86E1EC001B5F50 /* RGTFavoritesCollectionViewController.h */,
+				EA7F7DF91C86E1EC001B5F50 /* RGTFavoritesCollectionViewController.m */,
+				EA7F7DFA1C86E1EC001B5F50 /* RGTProductDetailTableViewController.h */,
+				EA7F7DFB1C86E1EC001B5F50 /* RGTProductDetailTableViewController.m */,
+				EA7F7DFC1C86E1EC001B5F50 /* RGTSearchResultCollectionViewController.h */,
+				EA7F7DFD1C86E1EC001B5F50 /* RGTSearchResultCollectionViewController.m */,
+				EA7F7DFE1C86E1EC001B5F50 /* RGTSearchViewController.h */,
+				EA7F7DFF1C86E1EC001B5F50 /* RGTSearchViewController.m */,
+			);
+			name = "View Controllers";
+			path = "RGTest/Classes/View Controllers";
+			sourceTree = SOURCE_ROOT;
+		};
+		EA7F7E041C86E206001B5F50 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA7F7E051C86E206001B5F50 /* Entities */,
+				EA7F7E111C86E206001B5F50 /* Mapping */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA7F7E051C86E206001B5F50 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				EA7F7E061C86E206001B5F50 /* RGTCategory+CoreDataProperties.h */,
+				EA7F7E071C86E206001B5F50 /* RGTCategory+CoreDataProperties.m */,
+				EA7F7E081C86E206001B5F50 /* RGTCategory.h */,
+				EA7F7E091C86E206001B5F50 /* RGTCategory.m */,
+				EA7F7E0A1C86E206001B5F50 /* RGTListingElement.h */,
+				EA7F7E0B1C86E206001B5F50 /* RGTListingElement.m */,
+				EA7F7E0C1C86E206001B5F50 /* RGTProduct+CoreDataProperties.h */,
+				EA7F7E0D1C86E206001B5F50 /* RGTProduct+CoreDataProperties.m */,
+				EA7F7E0E1C86E206001B5F50 /* RGTProduct.h */,
+				EA7F7E0F1C86E206001B5F50 /* RGTProduct.m */,
+				EA7F7E101C86E206001B5F50 /* RGTProductInfoProtocol.h */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		EA7F7E111C86E206001B5F50 /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				EA7F7E121C86E206001B5F50 /* RGTMapping.h */,
+				EA7F7E131C86E206001B5F50 /* RGTMapping.m */,
+			);
+			path = Mapping;
+			sourceTree = "<group>";
+		};
+		EA7F7E1A1C86E217001B5F50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA7F7E1B1C86E217001B5F50 /* RGTProductCollectionViewCell.h */,
+				EA7F7E1C1C86E217001B5F50 /* RGTProductCollectionViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,6 +423,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7F7E1F1C86E238001B5F50 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,25 +527,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA5FCFB91C76342F00743987 /* RGTSearchResultCollectionViewController.m in Sources */,
 				EA7F7DE11C81C774001B5F50 /* RGTGetImageURLsHTTPRequest.m in Sources */,
-				EA5FCFB61C75FBA700743987 /* RGTMapping.m in Sources */,
+				EA7F7E191C86E206001B5F50 /* RGTMapping.m in Sources */,
 				EA5FCFC81C773F6E00743987 /* RGTGetSearchResultHTTPRequest.m in Sources */,
 				EA5FCF9C1C74F2F200743987 /* RGTAPIController.m in Sources */,
-				EA5FCFCE1C79C2AD00743987 /* RGTProduct.m in Sources */,
+				EA7F7E151C86E206001B5F50 /* RGTCategory.m in Sources */,
+				EA7F7E171C86E206001B5F50 /* RGTProduct+CoreDataProperties.m in Sources */,
 				EA5FCF931C72636600743987 /* AppDelegate.m in Sources */,
-				EA5FCFB31C75FB8A00743987 /* RGTCategory.m in Sources */,
-				EA5FCF991C74A1B200743987 /* RGTSearchViewController.m in Sources */,
-				EA5FCFB21C75FB8A00743987 /* RGTCategory+CoreDataProperties.m in Sources */,
 				EA5FCFAA1C75FA4200743987 /* RGTest.xcdatamodeld in Sources */,
 				EA5FCF9F1C74F51B00743987 /* RGTAPIManager.m in Sources */,
 				EA5FCF651C7262FF00743987 /* main.m in Sources */,
-				EA5FCFCD1C79C2AD00743987 /* RGTProduct+CoreDataProperties.m in Sources */,
-				EA7F7DD31C7B37C3001B5F50 /* RGTProductDetailTableViewController.m in Sources */,
-				EA7F7DD91C7CD306001B5F50 /* RGTFavoritesCollectionViewController.m in Sources */,
+				EA7F7E181C86E206001B5F50 /* RGTProduct.m in Sources */,
+				EA7F7E031C86E1EC001B5F50 /* RGTSearchViewController.m in Sources */,
+				EA7F7E001C86E1EC001B5F50 /* RGTFavoritesCollectionViewController.m in Sources */,
+				EA7F7E021C86E1EC001B5F50 /* RGTSearchResultCollectionViewController.m in Sources */,
+				EA7F7E1D1C86E217001B5F50 /* RGTProductCollectionViewCell.m in Sources */,
 				EA5FCFA61C75002700743987 /* RGTGetCategoriesHTTPRequest.m in Sources */,
-				EA5FCFBD1C7635E100743987 /* RGTProductCollectionViewCell.m in Sources */,
-				EA7F7DD61C7C8C52001B5F50 /* RGTListingElement.m in Sources */,
+				EA7F7E011C86E1EC001B5F50 /* RGTProductDetailTableViewController.m in Sources */,
+				EA7F7E141C86E206001B5F50 /* RGTCategory+CoreDataProperties.m in Sources */,
+				EA7F7E161C86E206001B5F50 /* RGTListingElement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +554,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA5FCF7E1C7262FF00743987 /* RGTestTests.m in Sources */,
+				EA7F7E1E1C86E223001B5F50 /* RGTSearchResultCollectionViewController.m in Sources */,
 				EA7F7DF61C8486C8001B5F50 /* RGTSearchTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

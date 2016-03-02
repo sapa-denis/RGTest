@@ -28,7 +28,7 @@
 	[tester selectPickerViewRowWithTitle:@"Art"];
 	[tester tapViewWithAccessibilityLabel:@"Search"];
 	
-	// Verify that the login succeeded
+//	 Verify that the login succeeded
 //	[tester waitForCellAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0] inCollectionViewWithAccessibilityIdentifier:@"Search Collection View"];
 }
 
