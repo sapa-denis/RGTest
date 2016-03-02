@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9E3E0F59BAB9E6EF946A5931 /* libPods-RGTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6D4893690DCB4DA8F6476A /* libPods-RGTest.a */; };
+		BD566F373DA020FFFB8D6A98 /* libPods-RGTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53432A300C39E22A262EABE2 /* libPods-RGTestTests.a */; };
 		EA5FCF651C7262FF00743987 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5FCF641C7262FF00743987 /* main.m */; };
 		EA5FCF6E1C7262FF00743987 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5FCF6C1C7262FF00743987 /* Main.storyboard */; };
 		EA5FCF701C7262FF00743987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5FCF6F1C7262FF00743987 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		EA7F7DD61C7C8C52001B5F50 /* RGTListingElement.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7F7DD51C7C8C52001B5F50 /* RGTListingElement.m */; };
 		EA7F7DD91C7CD306001B5F50 /* RGTFavoritesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7F7DD81C7CD306001B5F50 /* RGTFavoritesCollectionViewController.m */; };
 		EA7F7DE11C81C774001B5F50 /* RGTGetImageURLsHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7F7DE01C81C774001B5F50 /* RGTGetImageURLsHTTPRequest.m */; };
+		EA7F7DF61C8486C8001B5F50 /* RGTSearchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7F7DF51C8486C8001B5F50 /* RGTSearchTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +48,10 @@
 
 /* Begin PBXFileReference section */
 		0A6D4893690DCB4DA8F6476A /* libPods-RGTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RGTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53432A300C39E22A262EABE2 /* libPods-RGTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RGTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5918CFAB53D0C7AB5425F1F8 /* Pods-RGTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RGTest/Pods-RGTest.debug.xcconfig"; sourceTree = "<group>"; };
 		A72401F9563EB2292FD5A95F /* Pods-RGTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RGTest/Pods-RGTest.release.xcconfig"; sourceTree = "<group>"; };
+		C501062D43E7E53F812376ED /* Pods-RGTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RGTestTests/Pods-RGTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		EA5FCF601C7262FF00743987 /* RGTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5FCF641C7262FF00743987 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA5FCF6D1C7262FF00743987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,6 +100,9 @@
 		EA7F7DDE1C7CFA4D001B5F50 /* RGTProductInfoProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTProductInfoProtocol.h; sourceTree = "<group>"; };
 		EA7F7DDF1C81C774001B5F50 /* RGTGetImageURLsHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTGetImageURLsHTTPRequest.h; sourceTree = "<group>"; };
 		EA7F7DE01C81C774001B5F50 /* RGTGetImageURLsHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTGetImageURLsHTTPRequest.m; sourceTree = "<group>"; };
+		EA7F7DF41C8486C8001B5F50 /* RGTSearchTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGTSearchTest.h; sourceTree = "<group>"; };
+		EA7F7DF51C8486C8001B5F50 /* RGTSearchTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGTSearchTest.m; sourceTree = "<group>"; };
+		F1DF068C0A64C154986260D6 /* Pods-RGTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RGTestTests/Pods-RGTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD566F373DA020FFFB8D6A98 /* libPods-RGTestTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +130,8 @@
 			children = (
 				5918CFAB53D0C7AB5425F1F8 /* Pods-RGTest.debug.xcconfig */,
 				A72401F9563EB2292FD5A95F /* Pods-RGTest.release.xcconfig */,
+				F1DF068C0A64C154986260D6 /* Pods-RGTestTests.debug.xcconfig */,
+				C501062D43E7E53F812376ED /* Pods-RGTestTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -130,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				0A6D4893690DCB4DA8F6476A /* libPods-RGTest.a */,
+				53432A300C39E22A262EABE2 /* libPods-RGTestTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -179,6 +190,8 @@
 			children = (
 				EA5FCF7D1C7262FF00743987 /* RGTestTests.m */,
 				EA5FCF7F1C7262FF00743987 /* Info.plist */,
+				EA7F7DF41C8486C8001B5F50 /* RGTSearchTest.h */,
+				EA7F7DF51C8486C8001B5F50 /* RGTSearchTest.m */,
 			);
 			path = RGTestTests;
 			sourceTree = "<group>";
@@ -337,9 +350,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA5FCF851C7262FF00743987 /* Build configuration list for PBXNativeTarget "RGTestTests" */;
 			buildPhases = (
+				E70CC7902B2C4097214DEC1E /* Check Pods Manifest.lock */,
 				EA5FCF751C7262FF00743987 /* Sources */,
 				EA5FCF761C7262FF00743987 /* Frameworks */,
 				EA5FCF771C7262FF00743987 /* Resources */,
+				F3D0CD6EB29F21AE7383F132 /* Embed Pods Frameworks */,
+				6F1CBC9AC6BF9FAC3D7CB2DB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -440,6 +456,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RGTest/Pods-RGTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6F1CBC9AC6BF9FAC3D7CB2DB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RGTestTests/Pods-RGTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E70CC7902B2C4097214DEC1E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		F10B1F982F972524D008FDDA /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -453,6 +499,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F3D0CD6EB29F21AE7383F132 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RGTestTests/Pods-RGTestTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -489,6 +550,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA5FCF7E1C7262FF00743987 /* RGTestTests.m in Sources */,
+				EA7F7DF61C8486C8001B5F50 /* RGTSearchTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +669,7 @@
 			baseConfigurationReference = 5918CFAB53D0C7AB5425F1F8 /* Pods-RGTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_LOADER = "";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/RGTest/RGTest-Prefix.pch";
@@ -615,6 +678,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Sapa.RGTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
@@ -623,6 +688,7 @@
 			baseConfigurationReference = A72401F9563EB2292FD5A95F /* Pods-RGTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_LOADER = "";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/RGTest/RGTest-Prefix.pch";
@@ -631,11 +697,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Sapa.RGTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 		EA5FCF861C7262FF00743987 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1DF068C0A64C154986260D6 /* Pods-RGTestTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = RGTestTests/Info.plist;
@@ -648,6 +717,7 @@
 		};
 		EA5FCF871C7262FF00743987 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C501062D43E7E53F812376ED /* Pods-RGTestTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = RGTestTests/Info.plist;

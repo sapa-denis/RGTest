@@ -10,7 +10,8 @@ target 'RGTest' do
         pod 'MagicalRecord'
 end
 
-target 'RGTestTests' do
+target 'RGTestTests', :exclusive => true do
+	pod 'KIF', '~> 3.0', :configurations => ['Debug']
 
 end
 

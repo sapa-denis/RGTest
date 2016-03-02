@@ -44,6 +44,7 @@ static NSString *const reuseIdentifier = @"RGTProductCollectionViewCell";
 													bundle:[NSBundle mainBundle]]
 		  forCellWithReuseIdentifier:reuseIdentifier];
 
+	self.collectionView.accessibilityIdentifier = @"Search Collection View";
 	
 	_refreshControl = [[UIRefreshControl alloc] init];
 	[_refreshControl addTarget:self
